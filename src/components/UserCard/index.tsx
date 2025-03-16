@@ -40,7 +40,7 @@ const UserCard: React.FC<UserCardProps> = ({
     : companyValue;
 
   return (
-    <CardContainer isSelected={isSelected}>
+    <CardContainer $isSelected={isSelected}>
       <CardContent>
         <UserName>{name}</UserName>
         <UserInfo>

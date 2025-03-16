@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Button } from "antd";
 
 interface CardContainerProps {
-  isSelected?: boolean;
+  $isSelected?: boolean;
 }
 
 export const CardContainer = styled.div<CardContainerProps>`
@@ -16,8 +16,8 @@ export const CardContainer = styled.div<CardContainerProps>`
   justify-content: space-between;
   box-shadow: ${({ theme }) => theme.shadows.sm};
   border: 2px solid
-    ${({ theme, isSelected }) =>
-      isSelected ? theme.colors.primary : "transparent"};
+    ${({ theme, $isSelected }) =>
+      $isSelected ? theme.colors.primary : theme.colors.border};
   transition: ${({ theme }) => theme.effects.transition};
 
   &:hover {

@@ -53,7 +53,6 @@ const Header: React.FC<HeaderProps> = ({ activePath }) => {
           <MenuOutlined />
         </MenuButton>
         <HeaderContent>
-          <Logo src={'./teddy-open-finance.png'} alt="Teddy Open Finance" />
         </HeaderContent>
         <UserSection>
           <UserName>Olá, {firstName}!</UserName>
